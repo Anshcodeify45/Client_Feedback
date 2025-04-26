@@ -16,7 +16,7 @@ app.use(express.json());
 
 connectDB();
 app.use('/uploads', express.static('uploads'));
-app.use('/api/auth', authRoutes);
+app.use('/api/auth', authRoutes);  
 app.use('/api/feedback', feedbackRoutes);
 
 app.use(errorHandler);
